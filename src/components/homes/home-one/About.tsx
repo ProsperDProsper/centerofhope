@@ -20,14 +20,14 @@ const counter_data: DataType[] = [
      page: "home_1",
      icon: "flaticon-solidarity",
      counter_number: 1000,
-     title: "Students Supported Through Education",
+     title: "Students Supported",
    },
    {
      id: 2,
      page: "home_1",
      icon: "flaticon-help",
      counter_number: 150,
-     title: "Community Volunteers Making Change",
+     title: "Community Volunteers",
      icon_bg: "counter-item__icon--green",
    },
 
