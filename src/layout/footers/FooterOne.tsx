@@ -19,7 +19,7 @@ interface ContentData {
 }
 
 const footer_content: ContentData = {
-   footer_about_text: (<>Wimply dummy text of the priatype industry orem Ipsum has Maecenas quis eros at ante lacinia efficitur.</>),
+   footer_about_text: (<>By supporting the younger generation,you create a safe future for the society</>),
    gallery: [footerGallery_1, footerGallery_2, footerGallery_3, footerGallery_4, footerGallery_5, footerGallery_6],
 }
 
