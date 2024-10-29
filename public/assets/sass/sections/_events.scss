@@ -22,7 +22,7 @@
             @include size(100%);
             flex-direction: column;
             justify-content: flex-end;
-            background: linear-gradient(179.98deg, rgba(37, 41, 47, 0.6132) 15.88%, rgba(248, 77, 66, 0.84) 62.28%);
+            background: linear-gradient(179.98deg, rgba(37, 41, 47, 0.6132) 15.88%, rgba(0, 174, 238) 62.28%);
             @include res-bl(xs) {
                 padding: 25px;
             }
