@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CommonSocialIcon from "@/components/common/SocialIcon";
 import HeaderOne from "../../../layout/headers/HeaderOne";
+import FooterOne from "../../../layout/footers/FooterOne";
 import Breadcrumb from "../../../components/common/Breadcrumb";
 
 const postQuery = `*[_type == "post" && slug.current == $slug][0]{
@@ -171,6 +172,7 @@ export default async function BlogPost({ params }) {
 				/>
 				<BlogDetailsArea post={post} recentPosts={recentPosts} />
 			</main>
+			<FooterOne />
 		</>
 	);
 }
