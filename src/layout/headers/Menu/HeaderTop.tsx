@@ -22,7 +22,6 @@ const HeaderTop = ({ style }: any) => {
                      <span>Follow Us  </span>
                      <Link href="#"><i className="fab fa-facebook-f"></i></Link>
                      <Link href="#"><i className="fab fa-twitter"></i></Link>
-                     <Link href="#"><i className="fab fa-pinterest-p"></i></Link>
                      <Link href="#"><i className="fab fa-linkedin-in"></i></Link>
                   </li>
                </ul>

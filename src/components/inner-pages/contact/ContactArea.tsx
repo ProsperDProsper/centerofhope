@@ -5,7 +5,7 @@ const ContactArea = () => {
    return (
       <div className="contact-page-area overflow-hidden py-120 rpt-100">
          <div className="container">
-            <div className="row gap-60 align-items-center">
+            <div className="flex flex-col lg:flex-row gap-16">
                <div className="col-lg-6">
                   <div className="faq-three-left-part mb-20 rel rmb-75">
                     <FaqContent/>

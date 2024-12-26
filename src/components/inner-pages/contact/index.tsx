@@ -12,7 +12,7 @@ const Contact = () => {
          <HeaderOne style_1={false} style_2={false} />
          <main>
             <Breadcrumb page_title="Contact Us" page_list="Contact" style={false} />
-            <Brand style={true} />
+            {/* <Brand style={true} /> */}
             <ContactArea/>
             <ContactInfo/>
             <LocationMap/>

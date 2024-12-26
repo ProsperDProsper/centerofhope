@@ -22,11 +22,11 @@ const contact_data: DataType[] = [
       contact_info: [
          {
             info_link: "callto:+(321)984754",
-            info_title: "+ (321) 984 754"
+            info_title: "+ 1 (217) 493-3445"
          },
          {
-            info_link: "callto:+1-212-9876543",
-            info_title: "+1-212-9876543"
+                info_link: "callto:+(321)984754",
+            info_title: "+ 1 (217) 493-3445"
          }
       ]
    },
@@ -37,20 +37,20 @@ const contact_data: DataType[] = [
       title: "Email Address",
       contact_info: [
          {
-            info_link: "mailto:info1234@gmail.com",
-            info_title: "info1234@gmail.com"
+            info_link: "mailto:maigamuga@centreofhope.co.tz",
+            info_title: "maigamuga@centreofhope.co.tz"
          },
          {
-            info_link: "mailto:test1234@gmail.com",
-            info_title: "test1234@gmail.com"
+            info_link: "mailto:maigamuga@centreofhope.co.tz",
+            info_title: "maigamuga@centreofhope.co.tz"
          }
       ]
    },
    {
       id: 3,
       icon: "flaticon-pin",
-      title: "Office Address",
-      contact_info_text: (<>2118 Thornridge Cir. Syracuse <br />Connecticut 35624</>),
+      title: "Mail Address",
+      contact_info_text: (<>P.O BOX 232,  <br />Musoma-Tanzania</>),
    },
 ]
 

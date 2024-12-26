@@ -37,19 +37,15 @@ const menu_data: MenuItem[] = [
     {
         id: 5,
         has_dropdown: true,
-        title: "Resources",
-        link: "#",
-        sub_menus: [
-            { link: "#", title: "News & Updates" },
-            { link: "#", title: "Success Stories" },
-            { link: "#", title: "Gallery" },
-        ],
+        title: "Blog",
+        link: "/blog",
+    
     },
     {
         id: 6,
         has_dropdown: false,
-        title: "Contact",
-        link: "#",
+        title: "Contacts",
+        link: "/contacts",
     },
 ];
 

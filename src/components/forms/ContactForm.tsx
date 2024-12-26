@@ -39,7 +39,7 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
          <div className="row">
             <div className="col-xl-9 mb-10">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+               <p>We would love to hear from you</p>
             </div>
             <div className="col-sm-6">
                <div className="form-group">
