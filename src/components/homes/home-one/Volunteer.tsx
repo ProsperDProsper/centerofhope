@@ -43,9 +43,9 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
       id: 1,
       page: "home_1",
       name: "Maiga Muga",
-      position: "Co-Founder",
+      position: "Co-Founder & CEO ",
       bio: "Maiga has extensive experience working with international nonprofit organizations, focusing on education and community development. He earned his Bachelor's degree in Education from the University of Dar es Salaam and enriched his expertise through an educational exchange program in the United States. Maiga later pursued and completed his Master's degree in the United States, further solidifying his commitment to advancing education globally.",
-      thumb: "/assets/img/stem.JPG",
+      thumb: "/assets/img/maiga.jpeg",
       item_bg: "valunteer-item--yellow",
     },
     {
@@ -63,7 +63,7 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
       name: "Jessica Ombeni",
       position: "Treasurer",
       bio: "Jessica Ombeni holds a Bachelor's degree in Accounting from the University of Dar es Salaam. With experience working with various companies across Tanzania, she brings a wealth of knowledge and expertise to her role. Passionate about making a positive impact, she is dedicated to using her skills to contribute meaningfully to the development and success of both her organization and the broader community.",
-      thumb: "/assets/img/stem.JPG",
+      thumb: "/assets/img/jesca.jpeg",
       item_bg: "valunteer-item--red",
     },
     {
@@ -81,7 +81,7 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
       name: "Nyakwesi Baraka",
       position: "Project Coordinator",
       bio: "Nyakwesi Baraka is an accomplished schoolteacher with extensive experience working in Musoma, particularly in rural areas. Throughout her teaching career, she has transformed the lives of hundreds of students, inspiring and empowering them to reach their full potential. Nyakwesi now brings her expertise and unwavering commitment to the Center of Hope.",
-      thumb: "/assets/img/stem.JPG",
+      thumb: "/assets/img/nyakwesi.jpeg",
       item_bg: "valunteer-item--green",
     },
     {
@@ -90,7 +90,7 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
       name: "Anna Ngasani",
       position: "Community Outreach Coordinator",
       bio: "Anna, a certified Pharmaceutical Technician with over seven years of experience in dispensing, is an education advocate committed to empowering communities through education, health awareness, and sustainable development. Passionate about community work, she actively participates in initiatives that promote peacebuilding, climate justice, and access to quality education.",
-      thumb: "/assets/img/stem.JPG",
+      thumb: "/assets/img/anna.JPG",
       item_bg: "valunteer-item--red",
     },
   ];

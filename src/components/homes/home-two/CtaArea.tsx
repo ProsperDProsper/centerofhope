@@ -1,30 +1,51 @@
+"use client"
 import Image from "next/image"
-import Link from "next/link";
+import videoBg from "@/assets/img/env.jpg"
+import leafShape from "@/assets/img/shapes/three-round-green.png"
 
-import ctaShape_1 from "@/assets/img/valunteer/valunteer-bg.png";
-import ctaShape_2 from "@/assets/img/valunteer/valunteer-bg2.png";
+const LifeSkillsArea = () => {
+    return (
+        <>
+            <div className="why-choose-area !bg-white overlay py-120">
+                <div className="container">
+                    <div className="row gap-100 align-items-center">
+                        <div className="col-lg-6">
+                            <div className="why-choose-content text-gray-700 rmb-65">
+                                <div className="section-title mb-60">
+                                    <span className="section-title__subtitle mb-10">Our Programs</span>
+                                    <h2>Life Skills and <br /> <span>Climate Change</span></h2>
+                                </div>
 
-const CtaArea = () => {
-   return (
-      <div className="cta-area bgc-black pt-110 rpt-120 pb-120 rel z-1">
-         <div className="container container-1170">
-            <div className="row justify-content-center">
-               <div className="col-xl-8 col-lg-10">
-                  <div className="section-title text-center text-white">
-                     <h2>Welcome To Save Life And Make A Positive <span>Impact</span></h2>
-                     <p>Only when the society comes together and contributeswe will be able to make an impact.</p>
-                     <Link className="cr-btn mt-35" href="#">Donate Now</Link>
-                  </div>
-               </div>
+                                <div className="education-content">
+                                    <p className="mb-4">
+                                        Education goes beyond the classroom. To prepare students for the challenges of the 21st
+                                        century, we:
+                                    </p>
+                                    <ul className="list-unstyled mb-4">
+                                        <li className="mb-3">• Equip them with essential life skills like leadership, entrepreneurship, and teamwork.</li>
+                                        <li className="mb-3">• Raise awareness about climate change and environmental sustainability.</li>
+                                        <li className="mb-3">• Inspire young minds to adopt eco-friendly practices and become stewards of the environment.</li>
+                                    </ul>
+                                    <p>
+                                        <strong>Impact:</strong> Students not only gain practical skills.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6">
+                            <div className="why-choose-video">
+                                <div className="video rel">
+                                    <Image src={videoBg} alt="Life Skills Program" />
+                                </div>
+                                <Image className="leaf-shape object-cover top_image_bounce" src={leafShape} alt="Shape" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         
-         <div className="cta-area-shapes">
-            <Image className="one" src={ctaShape_1} alt="Shape" />
-            <Image className="two" src={ctaShape_2} alt="Shape" />
-         </div>
-      </div>
-   )
+        </>
+    )
 }
 
-export default CtaArea
+export default LifeSkillsArea

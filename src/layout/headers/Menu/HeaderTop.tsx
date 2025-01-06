@@ -20,9 +20,11 @@ const HeaderTop = ({ style }: any) => {
                <ul className="topbar-right">
                   <li className="social-area">
                      <span>Follow Us  </span>
-                     <Link href="#"><i className="fab fa-facebook-f"></i></Link>
+                     {/* <Link href="#"><i className="fab fa-facebook-f"></i></Link>
                      <Link href="#"><i className="fab fa-twitter"></i></Link>
-                     <Link href="#"><i className="fab fa-linkedin-in"></i></Link>
+                     <Link href="#"><i className="fab fa-linkedin-in"></i></Link> */}
+         <Link href="https://www.instagram.com/centerofhope2024/profilecard/?igsh=ZzBsa2U1aWdybHRs"><i className="fab fa-instagram"></i></Link>
+
                   </li>
                </ul>
             </div>
