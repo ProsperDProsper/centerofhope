@@ -4,6 +4,7 @@ import Slider from 'react-slick'
 import Image from "next/image";
 import featureShape from "@/assets/img/shapes/three-round-green.png";
 import { StaticImageData } from "next/image";
+
 interface DataType {
    id: number;
    page: string;
@@ -21,32 +22,24 @@ const features_data: DataType[] = [
       id: 1,
       page: "home_1",
       icon_name: "flaticon-help",
-      title: "Join Our Mission",
-      desc: "Partner with us to empower youth in Musoma through education and skill-building programs that transform lives.",
+      title: "Education Scholarship",
+      desc: "Providing scholarships and school supplies for children from low-income families, working with communities to reduce barriers to education, and offering mentorship programs for academic excellence.",
    },
    {
       id: 2,
       page: "home_1",
       icon_name: "flaticon-solidarity",
       icon_bg: "feature-item__icon--green",
-      title: "Support Education",
-      desc: "Help provide scholarships and educational resources to students in the Mara region, creating pathways to success.",
+      title: "STEM Program",
+      desc: "Organizing hands-on STEM workshops and clubs, providing innovative learning tools, and connecting students with STEM professionals to inspire and guide future innovators.",
    },
    {
       id: 3,
       page: "home_1",
       icon_name: "flaticon-donation",
       icon_bg: "feature-item__icon--yellow",
-      title: "Community Impact",
-      desc: "Engage with our local community programs that raise awareness about education and create lasting change.",
-   },
-   {
-      id: 4,
-      page: "home_1",
-      icon_name: "flaticon-solidarity",
-      icon_bg: "feature-item__icon--green",
-      title: "Skills Development",
-      desc: "Support our skill-building initiatives that prepare young people for future opportunities and success.",
+      title: "Life Skills And Climate Change Awareness",
+      desc: "Equipping students with essential leadership and entrepreneurship skills while raising awareness about climate change and environmental sustainability for a better future.",
    },
 
    // single features - Vision, Mission, Impact statements
@@ -54,20 +47,20 @@ const features_data: DataType[] = [
       id: 1,
       page: "single_features",
       title: "Our Vision",
-      desc: "A world where every child in Musoma, regardless of gender, has equal access to quality education and the tools necessary to thrive.",
+      desc: "To create a future where every child in Musoma and the Mara region has access to quality education, equal opportunities, and the skills to thrive in a changing world.",
    },
    {
       id: 2,
       page: "single_features",
       title: "Our Mission",
-      desc: "Breaking the cycle of poverty through education, empowerment, and community engagement in Tanzania's Mara region.",
+      desc: "To provide equitable access to quality education, empower students through life skills development, and create awareness about critical global challenges, such as climate change, to inspire the next generation of leaders.",
       btn_bg: "btn--yellow",
    },
    {
       id: 3,
       page: "single_features",
-      title: "Our Impact",
-      desc: "Creating brighter futures through scholarships, skill-building programs, and vital resources that transform individual lives and communities.",
+      title: "Why Musoma?",
+      desc: "Musoma, located in the Mara region, is a vibrant community with immense potential but faces significant educational challenges, including limited access to quality resources, high dropout rates due to financial constraints, and a lack of exposure to STEM and modern life skills. Through our initiatives, we are bridging these gaps, empowering the youth, and building a stronger, more resilient community.",
       btn_bg: "btn--green",
    },
 ]
@@ -168,8 +161,9 @@ const Features = () => {
                            <div key={item.id} className="col-lg-4">
                               <div className="feature-item">
                                  <div className={`feature-item__icon ${item.icon_bg}`}><i className={item.icon_name}></i></div>
-                                 <h4><Link href="/cause-details">{item.title}</Link></h4>
+                                 <h4><Link href={`/programs#${item.title.toLowerCase().replace(/\s+/g, '-')}`}>{item.title}</Link></h4>
                                  <p>{item.desc}</p>
+                                 <Link href={`/programs/${item.title.toLowerCase().replace(/\s+/g, '-')}`} className="read-more mt-4">Learn More <i className="far fa-arrow-right"></i></Link>
                               </div>
                            </div>
                         ))}

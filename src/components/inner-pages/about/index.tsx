@@ -2,12 +2,13 @@ import Breadcrumb from "@/components/common/Breadcrumb"
 import FooterOne from "@/layout/footers/FooterOne"
 import HeaderOne from "@/layout/headers/HeaderOne"
 import Brand from "@/components/common/Brand"
-import About from "@/components/homes/home-one/About"
+
 import Features from "@/components/homes/home-one/Features"
 import Volunteer from "@/components/homes/home-one/Volunteer"
-import Testimonial from "@/components/homes/home-two/Testimonial"
 import CtaArea from "@/components/homes/home-three/CtaArea"
 import FAQ from "@/components/homes/home-one/FAQ"
+import About from "@/app/about/_components/About"
+import Testimonial from "@/components/homes/home-three/Testimonial"
 
 const InnerAbout = () => {
    return (
@@ -15,13 +16,11 @@ const InnerAbout = () => {
          <HeaderOne style_1={false} style_2={false} />
          <main>
             <Breadcrumb page_title="About Us" page_list="About" style={false} />
-            <Brand style={true} />
-            <About />
+            <About/>
             <Features />
             <Volunteer style={true} />
-            <Testimonial style={false} />
+            <Testimonial/>
             <CtaArea />
-            <FAQ />
          </main>
          <FooterOne />
       </>

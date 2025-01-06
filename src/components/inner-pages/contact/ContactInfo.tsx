@@ -21,8 +21,8 @@ const contact_data: DataType[] = [
       title: "Phone Number",
       contact_info: [
          {
-            info_link: "callto:+(321)984754",
-            info_title: "+ 1 (217) 493-3445"
+            info_link: "callto:+255 785 769 9548",
+            info_title: "+255 785 769 9548"
          },
          {
                 info_link: "callto:+(321)984754",
@@ -37,13 +37,10 @@ const contact_data: DataType[] = [
       title: "Email Address",
       contact_info: [
          {
-            info_link: "mailto:maigamuga@centreofhope.co.tz",
-            info_title: "maigamuga@centreofhope.co.tz"
+            info_link: "mailto:centerofhope24@gmail.com",
+            info_title: "centerofhope24@gmail.com"
          },
-         {
-            info_link: "mailto:maigamuga@centreofhope.co.tz",
-            info_title: "maigamuga@centreofhope.co.tz"
-         }
+        
       ]
    },
    {

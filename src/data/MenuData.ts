@@ -18,20 +18,22 @@ const menu_data: MenuItem[] = [
     },
     {
         id: 2,
-        has_dropdown: true,
         title: "About Us",
-        link: "#",
-        sub_menus: [
-            { link: "#", title: "Our Mission" },
-            { link: "#", title: "Our Vision" },
-            { link: "#", title: "Our Team" },
-        ],
+        link: "/about",
+        has_dropdown: false,
+
+     
     },
     {
         id: 3,
-        has_dropdown: false,
+        has_dropdown: true,
         title: "Programs",
         link: "#",
+           sub_menus: [
+            { link: "/education-scholarship", title: "Education Scholarship Program" },
+            { link: "/stem-program", title: "STEM Program" },
+            { link: "/life-skills-and-climate-change-awareness", title: "Life Skills and Climate Change Awareness Program" },
+        ],
     },
    
     {

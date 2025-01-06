@@ -5,7 +5,7 @@ import Count from "./Count"
 const FaqContent = () => {
    return (
       <>
-         <Image src={'/assets/img/about/contact.JPG'} alt="Man" />
+         <Image src={'/assets/img/about/contact.JPG'} width={500} height={500} className="object-cover" alt="Man" />
          <div className="experiences-years">
             <span className="experiences-years__number">10</span>
             <span className="experiences-years__text">Years Experiences</span>

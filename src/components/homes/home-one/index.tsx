@@ -6,6 +6,8 @@ import About from "./About"
 import Features from "./Features"
 import FAQ from "./FAQ"
 import CtaAreaThree from "../home-three/CtaArea"
+import EventSliderArea from "@/components/events/events-slider/EventSliderArea"
+import Testimonial from "../home-three/Testimonial"
 
 const HomeOne = () => {
    return (
@@ -14,7 +16,9 @@ const HomeOne = () => {
          <main>
             <HeroArea />
             <About />
-            <Features />
+            <Testimonial/>
+            {/* <Features /> */}
+            <EventSliderArea/>
             <Event />
             <CtaAreaThree/>
             <FAQ />
