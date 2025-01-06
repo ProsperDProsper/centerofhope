@@ -12,7 +12,7 @@ const PortfolioDetails = () => {
          <main>
             <Breadcrumb page_title="Protfolio Details" page_list="Protfolio Details" style={false} />
             <PortfolioDetailsArea/>
-            <VolunteerVideo style={true} />
+            <VolunteerVideo  />
             <Brand style={true} />
          </main>
          <FooterOne />
