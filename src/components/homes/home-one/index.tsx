@@ -19,7 +19,7 @@ const HomeOne = () => {
             <Testimonial/>
             {/* <Features /> */}
             <EventSliderArea/>
-            <Event />
+            {/* <Event /> */}
             <CtaAreaThree/>
             <FAQ />
          </main>

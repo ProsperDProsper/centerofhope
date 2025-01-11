@@ -23,6 +23,12 @@ const menu_data: MenuItem[] = [
         link: "/about",
         has_dropdown: false,
     },
+        {
+        id: 7,
+        title: "gallery",
+        link: "/gallery",
+        has_dropdown: false,
+    },
     {
         id: 3,
         has_dropdown: true,

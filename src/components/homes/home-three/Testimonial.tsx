@@ -4,46 +4,46 @@ import Slider from "react-slick";
 import Image from "next/image";
 
 const testimonial_data = [
-   {
-      id: 1,
-      name: "John Doe",
-      designation: "CEO, Example Corp",
-      desc: "The Center of Hope provided unparalleled support during challenging times.",
-      img: "/assets/img/testimonial1.jpg",
-      quote_icon: "/assets/img/quote-icon.png",
-   },
-   {
-      id: 2,
-      name: "Jane Smith",
-      designation: "Community Leader",
-      desc: "This organization truly makes a difference. Their dedication to empowering individuals is inspiring.We were fully in awe",
-      img: "/assets/img/testimonial2.jpg",
-      quote_icon: "/assets/img/quote-icon.png",
-   },
-   {
-      id: 3,
-      name: "Emily Johnson",
-      designation: "Volunteer",
-      desc: "Volunteering here has been a life-changing experience. The positive impact they create is evident everywhere.",
-      img: "/assets/img/testimonial3.jpg",
-      quote_icon: "/assets/img/quote-icon.png",
-   },
-   {
-      id: 4,
-      name: "Michael Brown",
-      designation: "Donor",
-      desc: "Knowing my contributions help transform lives through the Center of Hope is immensely gratifying.",
-      img: "/assets/img/testimonial4.jpg",
-      quote_icon: "/assets/img/quote-icon.png",
-   },
-   {
-      id: 5,
-      name: "Olivia Davis",
-      designation: "Beneficiary",
-      desc: "The Center of Hope gave me the tools to rebuild my life. I am forever grateful for their guidance and support.",
-      img: "/assets/img/testimonial5.jpg",
-      quote_icon: "/assets/img/quote-icon.png",
-   },
+    {
+        id: 1,
+        name: "Zawadi Majengo",
+        designation: "Form 4 Student, Musoma Secondary",
+        desc: "Kupitia msaada wa Center of Hope, nimeweza kuendelea na masomo yangu bila wasiwasi wa ada. Wamenisaidia pia kujifunza stadi za maisha na kujenga ndoto zangu. Leo nina matumaini ya kuwa daktari siku za usoni.",
+        img: "/assets/img/testimonial1.jpg",
+        quote_icon: "/assets/img/quote-icon.png",
+    },
+    {
+        id: 2,
+        name: "Juma Hamisi",
+        designation: "Form 6 Graduate, Now University Student",
+        desc: "Nilitoka familia maskini sana huko Bunda, lakini Center of Hope walinipa fursa ya kusoma. Leo nasoma Chuo Kikuu cha Dar es Salaam. Programu zao za kujenga ujuzi zimenisaidia kuwa kiongozi bora.",
+        img: "/assets/img/testimonial2.jpg",
+        quote_icon: "/assets/img/quote-icon.png",
+    },
+    {
+        id: 3,
+        name: "Sarah Bennett",
+        designation: "Monthly Donor from Vancouver",
+        desc: "After visiting Musoma and seeing firsthand how Center of Hope transforms young lives through education, I became a committed supporter. Their transparent approach and direct impact on students' lives is remarkable.",
+        img: "/assets/img/testimonial3.jpg",
+        quote_icon: "/assets/img/quote-icon.png",
+    },
+    {
+        id: 4,
+        name: "Bahati Nyambuya",
+        designation: "Community Parent, Musoma",
+        desc: "Watoto wangu wawili wamepata elimu kupitia Center of Hope. Wamenisaidia kama mzazi kuelewa umuhimu wa elimu kwa wasichana. Leo binti yangu anasoma na ana ndoto kubwa.",
+        img: "/assets/img/testimonial4.jpg",
+        quote_icon: "/assets/img/quote-icon.png",
+    },
+    {
+        id: 5,
+        name: "Dr. Richard Thompson",
+        designation: "Educational Partner, UK Education Initiative",
+        desc: "Working with Center of Hope has shown me the incredible potential in Mara's youth. Their holistic approach to education, combining academic support with life skills, creates lasting change. The dedication of their local team is inspiring.",
+        img: "/assets/img/testimonial5.jpg",
+        quote_icon: "/assets/img/quote-icon.png",
+    },
 ];
 
 const Testimonial = () => {

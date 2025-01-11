@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const DonateArea = () => {
     // Format WhatsApp number for link
-    const whatsappNumber = "+1 (217) 493-3445"
+    const whatsappNumber = "+255 629962905"
     const whatsappLink = `https://wa.me/${whatsappNumber}`
 
     return (
@@ -110,7 +110,7 @@ const DonateArea = () => {
                                 <div className="mb-3">
                                     <p className="font-medium mb-1">WhatsApp:</p>
                                     <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">
-                                        +1 (217) 493-3445
+                                     +255 629962905
                                     </a>
                                 </div>
                                 <div className="mb-3">

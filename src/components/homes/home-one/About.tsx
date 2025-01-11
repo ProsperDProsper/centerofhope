@@ -19,14 +19,14 @@ const counter_data: DataType[] = [
      id: 1,
      page: "home_1",
      icon: "flaticon-solidarity",
-     counter_number: 1000,
+     counter_number: 648,
      title: "Students Supported",
    },
    {
      id: 2,
      page: "home_1",
      icon: "flaticon-help",
-     counter_number: 150,
+     counter_number: 76,
      title: "Community Volunteers",
      icon_bg: "counter-item__icon--green",
    },
@@ -38,14 +38,14 @@ const counter_data: DataType[] = [
     icon: "flaticon-solidarity",
     icon_bg: "counter-item__icon--green",
     title: "Students",
-    counter_number: 1000,
+    counter_number: 648,
    },
    {
     id: 2,
     page: "home_2",
     icon: "flaticon-help",
     title: "Volunteers",
-    counter_number: 150,
+    counter_number: 76,
    },
    {
     id: 3,
@@ -84,7 +84,7 @@ const About = () => {
                            <div className="image mt-65 rmt-15 rel">
                               <Image src={aboutImg_2} alt="About" />
                               <div className="experiences-years">
-                                 <span className="experiences-years__number">10</span>
+                                 <span className="experiences-years__number">3</span>
                                  <span className="experiences-years__text">Years of Impact</span>
                               </div>
                            </div>
@@ -112,7 +112,7 @@ const About = () => {
                            </div>
                         </div>
                      ))}
-                     <Link className="cr-btn ml-5 mt-25" href="#">Join Our Mission</Link>
+                     <Link className="cr-btn ml-5 mt-25" href="/donate">Join Our Mission</Link>
                   </div>
                </div>
             </div>

@@ -6,12 +6,12 @@ import footer_data from "@/data/footerData";
 import logo_1 from "@/assets/img/logos/logo-white.png";
 import donate from "@/assets/img/footer/donate-by.png";
 
-import footerGallery_1 from "@/assets/img/footer/gallery1.jpg";
-import footerGallery_2 from "@/assets/img/footer/gallery2.jpg";
-import footerGallery_3 from "@/assets/img/footer/gallery3.jpg";
-import footerGallery_4 from "@/assets/img/footer/gallery4.jpg";
-import footerGallery_5 from "@/assets/img/footer/gallery5.jpg";
-import footerGallery_6 from "@/assets/img/footer/gallery6.jpg";
+import footerGallery_1 from "@/assets/img/footer/11.jpg";
+import footerGallery_2 from "@/assets/img/footer/22.jpg";
+import footerGallery_4 from "@/assets/img/footer/44.jpg";
+import footerGallery_6 from "@/assets/img/footer/66.jpg";
+import footerGallery_5 from "@/assets/img/footer/55.jpg";
+import footerGallery_3 from "@/assets/img/footer/33.jpg";
 
 interface ContentData {
    footer_about_text: JSX.Element;
@@ -57,16 +57,16 @@ const FooterOne = () => {
                   </div>
                ))}
 
-               {/* <div className="col-lg-3 col-md-6 col-sm-8">
+               <div className="col-lg-3 col-md-6 col-sm-8">
                   <div className="widget widget_gallery">
                      <h4 className="widget-title">Photo Gallery</h4>
                      <div className="gallery-photos">
                         {gallery.map((gallery, index) => (
-                           <a style={{cursor:"pointer"}} key={index} ><Image src={gallery} alt="Gallery" /></a>
+                           <a href="/gallery" style={{cursor:"pointer"}} key={index} ><Image width={100} height={100} className="h-10 w-10 object-coverS" src={gallery} alt="Gallery" /></a>
                         ))}
                      </div>
                   </div>
-               </div> */}
+               </div>
             </div>
          </div>
          

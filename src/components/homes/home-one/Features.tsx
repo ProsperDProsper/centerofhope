@@ -11,10 +11,12 @@ interface DataType {
    icon_bg?: string;
    icon_name?: string;
    title: string;
+   link:string;
    desc: string;
    btn_bg?: string;
    bg_img?: StaticImageData;
    item_bg?: string;
+
 }
 
 const features_data: DataType[] = [
@@ -23,9 +25,11 @@ const features_data: DataType[] = [
       page: "home_1",
       icon_name: "flaticon-help",
       title: "Education Scholarship",
+      link:'/programs#education',
       desc: "Providing scholarships and school supplies for children from low-income families, working with communities to reduce barriers to education, and offering mentorship programs for academic excellence.",
    },
    {
+      link:'/programs#stem',
       id: 2,
       page: "home_1",
       icon_name: "flaticon-solidarity",
@@ -34,6 +38,7 @@ const features_data: DataType[] = [
       desc: "Organizing hands-on STEM workshops and clubs, providing innovative learning tools, and connecting students with STEM professionals to inspire and guide future innovators.",
    },
    {
+      link:'/programs#lifeskills',
       id: 3,
       page: "home_1",
       icon_name: "flaticon-donation",
@@ -48,6 +53,7 @@ const features_data: DataType[] = [
       page: "single_features",
       title: "Our Vision",
       desc: "To create a future where every child in Musoma and the Mara region has access to quality education, equal opportunities, and the skills to thrive in a changing world.",
+      link:'#'
    },
    {
       id: 2,
@@ -55,6 +61,8 @@ const features_data: DataType[] = [
       title: "Our Mission",
       desc: "To provide equitable access to quality education, empower students through life skills development, and create awareness about critical global challenges, such as climate change, to inspire the next generation of leaders.",
       btn_bg: "btn--yellow",
+      link:'#'
+
    },
    {
       id: 3,
@@ -62,6 +70,8 @@ const features_data: DataType[] = [
       title: "Why Musoma?",
       desc: "Musoma, located in the Mara region, is a vibrant community with immense potential but faces significant educational challenges, including limited access to quality resources, high dropout rates due to financial constraints, and a lack of exposure to STEM and modern life skills. Through our initiatives, we are bridging these gaps, empowering the youth, and building a stronger, more resilient community.",
       btn_bg: "btn--green",
+      link:'#'
+
    },
 ]
 
@@ -137,7 +147,7 @@ const Features = () => {
                                  <h3>{item.title}</h3>
                                  <p>{item.desc}</p>
                               </div>
-                              <Link className={`cr-btn ${item.btn_bg}`} href="#">Support Us</Link>
+                              <Link className={`cr-btn ${item.btn_bg}`} href="/donate">Support Us</Link>
                            </div>
                         ))}
                      </Slider>
@@ -163,7 +173,7 @@ const Features = () => {
                                  <div className={`feature-item__icon ${item.icon_bg}`}><i className={item.icon_name}></i></div>
                                  <h4><Link href={`/programs#${item.title.toLowerCase().replace(/\s+/g, '-')}`}>{item.title}</Link></h4>
                                  <p>{item.desc}</p>
-                                 <Link href={`/programs/${item.title.toLowerCase().replace(/\s+/g, '-')}`} className="read-more mt-4">Learn More <i className="far fa-arrow-right"></i></Link>
+                                 <Link href={item.link} className="read-more mt-4">Learn More <i className="far fa-arrow-right"></i></Link>
                               </div>
                            </div>
                         ))}

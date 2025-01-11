@@ -14,20 +14,15 @@ const footer_data: DataType[] = [
       id:1,
       page:"home_1",
       widget_title: "About",
-      footer_link: [{ link: "#", link_title: "Home" }, { link: "#", link_title: "Donation" }, { link: "#", link_title: "About us" }, { link: "#", link_title: "Event" }, { link: "#", link_title: "Features" },]
+      footer_link: [{ link: "/about", link_title: "Home" }, { link: "/donate", link_title: "Donations" }, { link: "/about", link_title: "About us" }, { link: "#", link_title: "Features" },]
    },
    {
       id:2,
       page:"home_1",
       widget_title: "Quick links",
-      footer_link: [{ link: "#", link_title: "Causes" }, { link: "#", link_title: "About" }, { link: "#", link_title: "New campaign" }, { link: "#", link_title: "Site map" }, { link: "#", link_title: "Stories" },]
+      footer_link: [{ link: "/programs", link_title: "Our Programmes" },{ link: "/contacts", link_title: "Our Contacts" }]
    },
-   {
-      id:3,
-      page:"home_1",
-      widget_title: "Explore",
-      footer_link: [{ link: "#", link_title: "Donate" }, { link: "#", link_title: "Campaigns" }, { link: "#", link_title: "Fundraise" }, { link: "#", link_title: "Volunteers" }, { link: "#", link_title: "Sponsors" },]
-   },
+
 
    // home two
 

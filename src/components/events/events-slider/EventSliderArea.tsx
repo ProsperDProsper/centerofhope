@@ -5,21 +5,21 @@ import Link from "next/link";
 const ProgramShowcaseArea = () => {
   const programs = [
     {
-      id: 'education',
+      id: '/programs#education',
       title: "Education Scholarship",
       thumb: "/assets/img/education.jpeg",
       desc: "We provide scholarships and school supplies for children from low-income families, work closely with schools and communities to reduce barriers to education, and offer mentorship programs to ensure students excel academically and personally.",
       item_bg: "bg-lighter",
     },
     {
-      id: 'stem-program',
+      id: '/programs#stem',
       title: "STEM Program",
       thumb: "/assets/img/stem.JPG",
       desc: "We organize STEM workshops and clubs for primary and secondary school students, provide hands-on learning opportunities using innovative tools and resources, and connect students with mentors and professionals in STEM fields.",
       item_bg: "bg-lighter",
     },
     {
-      id: 'life-skills-and-climate-change-awareness',
+      id: '/programs#lifeskills',
       title: "Life Skills and Climate Change Awareness",
       thumb: "/assets/img/environment.JPG",
       desc: "We equip students with essential life skills like leadership, entrepreneurship, and teamwork while raising awareness about climate change and environmental sustainability, inspiring them to become stewards of the environment.",
@@ -28,7 +28,7 @@ const ProgramShowcaseArea = () => {
   ];
 
   return (
-    <div className="our-programs pt-120  rel z-1">
+    <div className="our-programs py-16 md:py-64   rel z-1">
       <div className="container">
         <div className="section-title ">
                         <span className="section-title__subtitle ">what we do</span>
@@ -60,11 +60,11 @@ const ProgramShowcaseArea = () => {
                 >
                   <div>
                     <h4>
-                      <Link href={`/programs/${item.id}`}>{item.title}</Link>
+                      <Link href={`${item.id}`}>{item.title}</Link>
                     </h4>
                     <p>{item.desc}</p>
                   </div>
-                  <Link className="text-center  " href={`/programs/${item.id}`}>
+                  <Link className="text-center  " href={`${item.id}`}>
                   <div className="!flex justify-center !text-[#01ADF0] items-center">
                   <p>
                   Read more

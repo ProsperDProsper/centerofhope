@@ -95,3 +95,92 @@ export async function getPostsByDateRange(startDate, endDate) {
   `;
 	return client.fetch(query, { startDate, endDate });
 }
+
+// Base fields for gallery items
+export const galleryFields = `
+  _id,
+  title,
+  description,
+  "imageUrl": image.asset->url,
+  "alt": image.alt,
+  publishedAt
+`;
+
+// Get all gallery images with pagination
+export async function getGalleryImages(page = 1, limit = 9) {
+	const query = `{
+    "images": *[_type == "gallery"] | order(publishedAt desc) [$start...$end] {
+      ${galleryFields}
+    },
+    "total": count(*[_type == "gallery"])
+  }`;
+
+	const start = (page - 1) * limit;
+	const end = start + limit;
+
+	return client.fetch(query, { start, end });
+}
+
+// Get a single gallery image by ID
+export async function getGalleryImageById(id) {
+	const query = `
+    *[_type == "gallery" && _id == $id][0] {
+      ${galleryFields}
+    }
+  `;
+	return client.fetch(query, { id });
+}
+
+// Get latest gallery images
+export async function getLatestGalleryImages(limit = 6) {
+	const query = `
+    *[_type == "gallery"] | order(publishedAt desc)[0...${limit}] {
+      ${galleryFields}
+    }
+  `;
+	return client.fetch(query);
+}
+
+// Get gallery images by date range
+export async function getGalleryByDateRange(startDate, endDate) {
+	const query = `
+    *[
+      _type == "gallery" && 
+      publishedAt >= $startDate && 
+      publishedAt <= $endDate
+    ] | order(publishedAt desc) {
+      ${galleryFields}
+    }
+  `;
+	return client.fetch(query, { startDate, endDate });
+}
+
+// Get total count of gallery images
+export async function getGalleryCount() {
+	const query = `count(*[_type == "gallery"])`;
+	return client.fetch(query);
+}
+
+// Search gallery images by title or description
+export async function searchGallery(searchTerm) {
+	const query = `
+    *[
+      _type == "gallery" && 
+      (title match $searchTerm || description match $searchTerm)
+    ] | order(publishedAt desc) {
+      ${galleryFields}
+    }
+  `;
+	return client.fetch(query, { searchTerm: `*${searchTerm}*` });
+}
+
+// Get gallery images grouped by month
+export async function getGalleryByMonth() {
+	const query = `
+    *[_type == "gallery"] | order(publishedAt desc) {
+      ${galleryFields},
+      "month": datetime(publishedAt).month + "-" + datetime(publishedAt).year
+    } | group by month
+  `;
+	return client.fetch(query);
+}

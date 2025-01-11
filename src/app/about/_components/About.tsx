@@ -74,7 +74,7 @@ const About = () => {
                                  <i className="flaticon-charity"></i>
                               </div>
                               <div className="project-complete__content">
-                                 <h5>Empowering Youth in Musoma</h5>
+                                 <h5>Empowering Youth in Musoma within</h5>
                                  <span>Breaking cycles of poverty</span>
                               </div>
                            </div>
@@ -84,7 +84,7 @@ const About = () => {
                            <div className="image mt-65 rmt-15 rel">
                               <Image src={aboutImg_2} alt="About" />
                               <div className="experiences-years">
-                                 <span className="experiences-years__number">10</span>
+                                 <span className="experiences-years__number">3</span>
                                  <span className="experiences-years__text">Years of Impact</span>
                               </div>
                            </div>
@@ -100,7 +100,7 @@ const About = () => {
                   <div className="about-content-part rmt-65">
                      <div className="section-title mb-60">
                         <span className="section-title__subtitle mb-10">About us</span>
-                        <h2>Empowering Dreams in <span>Mara Region</span></h2>
+                        <h2>Empowering Dreams in Musoma <span>Mara Region</span></h2>
                      </div>
                      <p className="mb-4">Center of Hope (Registration Number 00NGO/R/7636) is a nonprofit organization
 dedicated to empowering girls and boys in the Mara region by breaking the cycle of
@@ -116,7 +116,7 @@ backgrounds, by addressing the critical challenges in the education sector. By f
 on access, quality, and innovation, we work to ensure that every child has the
 opportunity to learn, grow, and thrive.</p>
                
-                     <Link className="cr-btn ml-5 mt-25" href="#">Join The Mission</Link>
+                     <Link className="cr-btn ml-5 mt-25" href="/donate">Join The Mission</Link>
                   </div>
                </div>
             </div>

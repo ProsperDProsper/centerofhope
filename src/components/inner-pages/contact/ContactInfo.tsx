@@ -18,15 +18,15 @@ const contact_data: DataType[] = [
       id: 1,
       item_bg:"contact-info-item--green",
       icon: "flaticon-phone-call",
-      title: "Phone Number",
+      title: "Phone Numbers",
       contact_info: [
          {
             info_link: "callto:+255 785 769 9548",
             info_title: "+255 785 769 9548"
          },
          {
-                info_link: "callto:+(321)984754",
-            info_title: "+ 1 (217) 493-3445"
+                info_link: "https://wa.me/255629962905",
+            info_title: " (whatsapp) +255 629962905"
          }
       ]
    },
