@@ -22,28 +22,28 @@ const faq_data = [
     id: 1,
     page: "home_1",
     question: "How can I support a student's education at Center of Hope?",
-    answer: "You can support our students through various means: monthly sponsorships that cover school fees, uniforms, and supplies; one-time donations; or by contributing to our scholarship fund. We ensure 100% of your donation goes directly to supporting education programs in Musoma, Tanzania.",
+    answer: "You can support by providing scholarships and school supplies for children from low-income families. Whether you want to donate, volunteer, or partner with us, your support helps us transform lives. Together, we can ensure every child in Musoma has access to quality education and opportunities for a brighter future.",
     showAnswer: true, // Set first question to be open by default
   },
   {
     id: 2,
     page: "home_1",
     question: "What programs does Center of Hope offer?",
-    answer: "We offer three main programs: 1) Educational Scholarships for primary and secondary students, 2) Skills Development workshops including computer training, entrepreneurship, and vocational skills, and 3) Community Engagement programs that promote education awareness in the Mara region.",
+    answer: "We offer three main programs: 1) Education Scholarship Program - providing scholarships and school supplies for low-income families, 2) STEM Program - organizing workshops and clubs for primary and secondary school students with hands-on learning opportunities, and 3) Life Skills and Climate Change Awareness Program - equipping students with essential life skills like leadership, entrepreneurship, and environmental sustainability awareness.",
     showAnswer: false,
   },
   {
     id: 3,
     page: "home_1",
     question: "How can I volunteer with Center of Hope?",
-    answer: "We welcome volunteers in Musoma who can contribute to our educational programs, mentorship initiatives, or skill-building workshops. We particularly need teachers, mentors, and professionals who can commit to at least 3 months. Contact us at our P.O BOX 232, Musoma-Tanzania for volunteer opportunities.",
+    answer: "We welcome volunteers in Musoma who can contribute to our educational programs, mentorship initiatives, or skill-building workshops. We particularly need teachers, mentors, and professionals who can support our cause. Contact us at our P.O BOX 232, Musoma-Tanzania for volunteer opportunities.",
     showAnswer: false,
   },
   {
     id: 4,
     page: "home_1",
     question: "What is the selection criteria for student beneficiaries?",
-    answer: "We select students based on a combination of academic potential, financial need, and commitment to education. Our selection process involves community leaders, teachers, and family assessments to ensure support reaches those who need it most while maintaining gender balance in our programs.",
+    answer: "We aim to empower students, especially those from underprivileged backgrounds, by addressing the critical challenges in the education sector. We focus on access, quality, and innovation to ensure that every child has the opportunity to learn, grow, and thrive. Our work particularly targets communities in the Mara region, where poverty rates are higher than the national average.",
     showAnswer: false,
   },
 ];
