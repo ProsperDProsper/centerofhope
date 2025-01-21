@@ -26,6 +26,7 @@ const HeaderTop = ({ style }: any) => {
                      <Link href="#"><i className="fab fa-linkedin-in"></i></Link> */}
          <Link href="https://www.instagram.com/centerofhope2024/profilecard/?igsh=ZzBsa2U1aWdybHRs"><i className="fab fa-instagram"></i></Link>
          <Link href="https://www.facebook.com/profile.php?id=100064880372276"><i className="fab fa-facebook"></i></Link>
+         <Link href="https://x.com/center_hope24?s=11"><i className="fab fa-twitter"></i></Link>
 
                   </li>
                </ul>

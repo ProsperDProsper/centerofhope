@@ -20,7 +20,7 @@ const footer_data: DataType[] = [
       id:2,
       page:"home_1",
       widget_title: "Quick links",
-      footer_link: [{ link: "/programs", link_title: "Our Programmes" },{ link: "/contacts", link_title: "Our Contacts" }]
+      footer_link: [{ link: "/programs", link_title: "Our Programmes" },{ link: "/contacts", link_title: "Our Contacts" },{ link: "/volunteers", link_title: "Volunteer Today" }]
    },
 
 

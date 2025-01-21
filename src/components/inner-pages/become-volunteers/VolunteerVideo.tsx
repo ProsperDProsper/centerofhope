@@ -1,39 +1,35 @@
 import Image from "next/image";
 import volunteerVideoThumb from "@/assets/img/stem.jpg";
 
-const StemProgram = () => {
+const CommunityProgram = () => {
     return (
-        <div className="become-volunteer-video-area pb-65">
+        <div className="become-volunteer-video-area pb-16">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-xl-7">
-                        <div className="become-volunteer-video  mb-55 image">
-                            <Image className="object-cover" src={volunteerVideoThumb} alt="STEM Program" />
+                        <div className="become-volunteer-video mb-14 image">
+                            <Image className="object-cover" src={volunteerVideoThumb} alt="Community Awareness Program" />
                         </div>
                     </div>
-
+                    
                     <div className="col-xl-5">
-                        <div className="become-volunteer-video-content mb-45">
+                        <div className="become-volunteer-video-content mb-12">
                             <div className="section-title">
-                                <span className="section-title__subtitle mb-10">Our Programs</span>
-                                <h3>STEM Program</h3>
+                                <span className="section-title__subtitle mb-3">02 </span>
+                                <h3>Community Awareness Programs</h3>
                             </div>
                             
                             <p className="mb-4">
-                                In today's fast-evolving world, skills in Science, Technology, Engineering, and Mathematics
-                                (STEM) are critical. We:
+                                Be part of creating a sustainable future by engaging in our community outreach initiatives.
+                                Volunteers can work on:
                             </p>
-
+                            
                             <ul className="list-style-two">
-                                <li>Organize STEM workshops and clubs for primary and secondary school students.</li>
-                                <li>Provide hands-on learning opportunities using innovative tools and resources.</li>
-                                <li>Connect students with mentors and professionals in STEM fields to inspire and guide them.</li>
+                                <li>Raising awareness about climate change and promoting eco-friendly practices.</li>
+                                <li>Teaching essential life skills to equip individuals for personal and professional growth.</li>
                             </ul>
                             
-                            <p className="mt-4">
-                                <strong>Impact:</strong> Our program has sparked curiosity and creativity, encouraging students to think
-                                critically and solve real-world problems.
-                            </p>
+                     
                         </div>
                     </div>
                 </div>
@@ -42,4 +38,4 @@ const StemProgram = () => {
     )
 }
 
-export default StemProgram
+export default CommunityProgram

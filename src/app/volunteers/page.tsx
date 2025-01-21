@@ -1,13 +1,13 @@
-import Volunteers from "@/components/inner-pages/volunteers";
+import PortfolioDetails from "@/components/portfolio/portfolio-details";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "Volunteers Charite - Charity & Donation React Next js Template",
+   title: "How to volunteer with center of hope ",
 };
 const index = () => {
    return (
       <Wrapper>
-         <Volunteers />
+         <PortfolioDetails />
       </Wrapper>
    )
 }

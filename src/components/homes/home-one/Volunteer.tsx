@@ -14,7 +14,7 @@ const CustomPrevArrow = ({ onClick }: { onClick?: () => void }) => {
     <button
       onClick={onClick}
       type="button"
-      className="absolute -left-14 top-1/2 -translate-y-1/2 z-10 bg-[#01ADEF]  h-16 w-16 rounded-full shadow-lg"
+      className="absolute -left-14 top-1/2 -translate-y-1/2 z-10 bg-[#01ADEF] h-16 w-16 rounded-full shadow-lg"
     >
       <i className="flaticon-left-chevron text-white"></i>
     </button>
@@ -26,7 +26,7 @@ const CustomNextArrow = ({ onClick }: { onClick?: () => void }) => {
     <button
       onClick={onClick}
       type="button"
-      className="absolute -right-14 top-1/2 -translate-y-1/2 z-10 bg-[#01ADEF] h-16 w-16  rounded-full shadow-lg"
+      className="absolute -right-14 top-1/2 -translate-y-1/2 z-10 bg-[#01ADEF] h-16 w-16 rounded-full shadow-lg"
     >
       <i className="flaticon-next text-white"></i>
     </button>
@@ -53,7 +53,7 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
       page: "home_1",
       name: "John Kuboja",
       position: "Executive Director & Co-Founder",
-      bio: "John holds a Bachelor’s degree in Education (BAED) from the University of Dar es Salaam. He has gained extensive experience working with various nonprofit organizations and international agencies. Notably, he served as a team leader for volunteers in the Mara region under UNICEF Tanzania, where he led efforts to advocate for child rights and protection. John’s work focused on empowering communities and raising awareness about critical issues affecting children. His expertise in education, program coordination, and community development underscores his unwavering commitment to driving positive change in underserved areas.",
+      bio: "John holds a Bachelor's degree in Education (BAED) from the University of Dar es Salaam. He has gained extensive experience working with various nonprofit organizations and international agencies. Notably, he served as a team leader for volunteers in the Mara region under UNICEF Tanzania, where he led efforts to advocate for child rights and protection. John's work focused on empowering communities and raising awareness about critical issues affecting children. His expertise in education, program coordination, and community development underscores his unwavering commitment to driving positive change in underserved areas.",
       thumb: "/assets/img/john.jpeg",
       item_bg: "valunteer-item--green",
     },
@@ -71,8 +71,8 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
       page: "home_1",
       name: "Godfrey Chirangi",
       position: "Program Advisor",
-      bio: "Providing strategic guidance for our educational programs.",
-      thumb: "/assets/img/stem.JPG",
+      bio: "Godfrey is a dedicated educator and pastor serving at the Mennonite Church, Kwangwa Congregation. With a passion for nurturing both spiritual growth and educational development, Godfrey combines his pastoral calling with his commitment to empowering communities through knowledge and guidance.Godfrey serves as a Program Advisor at the Center of Hope, where he provides strategic leadership and mentorship for various community initiatives. His work focuses on fostering sustainable growth and addressing critical issues such as education, climate change awareness, and life skills development.",
+      thumb: "/assets/img/godfrey.jpg",
       item_bg: "valunteer-item--yellow",
     },
     {
@@ -99,11 +99,11 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: Math.min(3, team_data.length), // Dynamically adjust slides to show
+    slidesToShow: Math.min(3, team_data.length),
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 3000, // Adjust the speed of auto-scroll
+    autoplaySpeed: 3000,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
     responsive: [
@@ -141,16 +141,23 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
         <div className="relative">
           <Slider {...settings} className="volunteer-slider">
             {filteredVolunteers.map((item) => (
-              <div key={item.id} className="px-3">
-                <div className={`valunteer-item ${item.item_bg}`}>
-                  <div className="valunteer-item__img">
-                    <Image src={item.thumb} alt={item.name} className="object-cover" width={400} height={500} />
-                   
+              <div key={item.id} className="px-3 h-full">
+                <div className={`valunteer-item ${item.item_bg} h-full flex flex-col`}>
+                  <div className="valunteer-item__img relative h-96 w-full">
+                    <Image 
+                      src={item.thumb} 
+                      alt={item.name} 
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                   </div>
-                  <div className="valunteer-item__designation">
-                    <h5>{item.name}</h5>
-                    <span>{item.position}</span>
-                    <p className="mt-2 text-sm text-white">{item.bio}</p>
+                  <div className="valunteer-item__designation flex-1 p-6">
+                    <h5 className="text-xl font-bold mb-2">{item.name}</h5>
+                    <span className="block text-lg mb-4">{item.position}</span>
+                    <div className="h-48 overflow-y-auto">
+                      <p className="text-sm text-white leading-relaxed">{item.bio}</p>
+                    </div>
                   </div>
                 </div>
               </div>

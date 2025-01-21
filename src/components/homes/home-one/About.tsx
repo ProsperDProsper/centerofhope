@@ -74,7 +74,7 @@ const About = () => {
                                  <i className="flaticon-charity"></i>
                               </div>
                               <div className="project-complete__content">
-                                 <h5>Empowering Youth in Musoma</h5>
+                                 <h5>Empowering Youth in Musoma </h5>
                                  <span>Breaking cycles of poverty</span>
                               </div>
                            </div>
@@ -100,7 +100,7 @@ const About = () => {
                   <div className="about-content-part rmt-65">
                      <div className="section-title mb-60">
                         <span className="section-title__subtitle mb-10">About us</span>
-                        <h2>Empowering Dreams in <span>Mara Region</span></h2>
+                        <h2>Empowering Dreams in Musoma <span> Mara Region</span></h2>
                      </div>
                      <p>Center of Hope (NGO/R/7636) is dedicated to transforming lives through education and empowerment in Musoma, Tanzania. We believe in breaking the cycle of poverty by providing scholarships, skill-building programs, and vital resources to young minds. Our vision is to create a world where every child, regardless of gender, has equal access to quality education and the opportunity to thrive.</p>
                      {counter_data.filter((item) => item.page === "home_1").map((item) => (

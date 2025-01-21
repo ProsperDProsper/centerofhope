@@ -52,11 +52,17 @@ const menu_data: MenuItem[] = [
             },
         ],
     },
-    {
+    // {
+    //     id: 5,
+    //     has_dropdown: false,
+    //     title: "Blog",
+    //     link: "/blog",
+    // },
+        {
         id: 5,
-        has_dropdown: true,
-        title: "Blog",
-        link: "/blog",
+        has_dropdown: false,
+        title: "Volunteers",
+        link: "/volunteers",
     },
     {
         id: 6,
