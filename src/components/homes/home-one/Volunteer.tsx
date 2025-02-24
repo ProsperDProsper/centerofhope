@@ -43,7 +43,7 @@ const Volunteer: React.FC<VolunteerProps> = ({ style }) => {
       id: 1,
       page: "home_1",
       name: "Maiga Muga",
-      position: " CEO & Co-Founder ",
+      position: " CEO & Founder ",
       bio: "Maiga has extensive experience working with international nonprofit organizations, focusing on education and community development. He earned his Bachelor's degree in Education from the University of Dar es Salaam and enriched his expertise through an educational exchange program in the United States. Maiga later pursued and completed his Master's degree in the United States, further solidifying his commitment to advancing education globally.",
       thumb: "/assets/img/maiga.jpeg",
       item_bg: "valunteer-item--yellow",

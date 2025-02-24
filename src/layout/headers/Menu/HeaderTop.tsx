@@ -12,7 +12,7 @@ const HeaderTop = ({ style }: any) => {
                         <li>Shiloh, Hawaii 81063</li>
                      </> :
                      <>
-                        <li><b> <i className="flaticon-phone-call"></i>  <Link href="callto:+255 785 769 9548">+255 785 769 9548</Link></b></li>
+                        <li><b> <i className="flaticon-phone-call"></i>  <Link href="callto:+255 785 76 9548">+255 785 76 9548</Link></b></li>
                   <p className='italic'> (whatsapp) </p>     <li><b> <i className="flaticon-whatsapp"></i> <Link href="https://wa.me/255629962905">+255 629962905</Link></b></li>
                    <li><i className="flaticon-pin"></i> P.O Box 232, Musoma-Tanzania</li>
                      </>

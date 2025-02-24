@@ -21,8 +21,8 @@ const contact_data: DataType[] = [
       title: "Phone Numbers",
       contact_info: [
          {
-            info_link: "callto:+255 785 769 9548",
-            info_title: "+255 785 769 9548"
+            info_link: "callto:+255 785 76 9548",
+            info_title: "+255 785 76 9548"
          },
          {
                 info_link: "https://wa.me/255629962905",

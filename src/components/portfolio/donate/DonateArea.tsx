@@ -77,11 +77,11 @@ const DonateArea = () => {
                                 </div>
                                 <div className="mb-3">
                                     <p className="font-medium mb-1">Account Number:</p>
-                                    <p className="text-gray-600">0152355921600</p>
+                                    <p className="text-gray-600">015C0007LPT00</p>
                                 </div>
                                 <div className="mb-3">
                                     <p className="font-medium mb-1">Swift Code:</p>
-                                    <p className="text-gray-600">CRDBTZTZ</p>
+                                    <p className="text-gray-600">CORUTZT10TD</p>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ const DonateArea = () => {
                                 <div className="mb-3">
                                     <p className="font-medium mb-1">Phone 1:</p>
                                     <a href="tel:+255785769548" className="text-gray-600 hover:text-primary">
-                                        +255 785 769 9548
+                                        +255 785 769 548
                                     </a>
                                 </div>
                                 <div className="mb-3">
