@@ -21,7 +21,7 @@ const ProgramShowcaseArea = () => {
     {
       id: '/programs#lifeskills',
       title: "Life Skills and Climate Change Awareness",
-      thumb: "/assets/img/environment.JPG",
+      thumb: "/assets/img/env.jpg",
       desc: "We equip students with essential life skills like leadership, entrepreneurship, and teamwork while raising awareness about climate change and environmental sustainability, inspiring them to become stewards of the environment.",
       item_bg: "bg-lighter",
     },
