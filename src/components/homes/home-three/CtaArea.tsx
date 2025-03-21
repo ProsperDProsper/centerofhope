@@ -9,7 +9,7 @@ const CtaAreaThree = () => {
                    <div className="section-title text-center text-white">
                        <h2>Welcome To Save Life And Make A Positive <span>Impact</span></h2>
                        <p>Only when the society comes together and contributeswe will be able to make an impact.</p>
-                       <Link className="cr-btn mt-30" href="/donate">Donate Now</Link>
+                       <Link className="cr-btn mt-30" href="/volunteers">Volunteer</Link>
                    </div>
                </div>
            </div>

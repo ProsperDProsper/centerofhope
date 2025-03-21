@@ -18,6 +18,27 @@ const ProgramShowcaseArea = () => {
       desc: "We organize STEM workshops and clubs for primary and secondary school students, provide hands-on learning opportunities using innovative tools and resources, and connect students with mentors and professionals in STEM fields.",
       item_bg: "bg-lighter",
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     {
       id: '/programs#lifeskills',
       title: "Life Skills and Climate Change Awareness",

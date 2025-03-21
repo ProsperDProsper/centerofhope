@@ -10,8 +10,8 @@ const heroData = {
     description: "Every child deserves a chance to shine. Join us in breaking the cycle of poverty through education and empowerment in Tanzania",
     buttons: [
         {
-            text: "Volunteer ",
-            link: "/volunteers",
+            text: "Donate",
+            link: "/donate",
             className: "cr-btn"
         },
         {
